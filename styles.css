@@ -1,3 +1,10 @@
+/* For image centering */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
