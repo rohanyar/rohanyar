@@ -97,17 +97,6 @@ ul.myUL {
     text-align: left;
 }
 
-/* Style the "Previous" and "Next" buttons */
-.prev-button, .next-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
 .prev-button {
     float: left; /* Float the "Previous" button to the left */
