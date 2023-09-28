@@ -96,3 +96,30 @@ ul.myUL {
     display: inline-block;
     text-align: left;
 }
+
+/* Style the buttons in the nav bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* This will place items at each end */
+}
+
+/* Style the "Previous" and "Next" buttons */
+.prev-button, .next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
