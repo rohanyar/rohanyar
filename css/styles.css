@@ -21,8 +21,10 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
 }
 
 /* Style the main content container */
@@ -98,15 +100,3 @@ ul.myUL {
 }
 
 
-.prev-button {
-    float: left; /* Float the "Previous" button to the left */
-}
-
-.next-button {
-    float: right; /* Float the "Next" button to the right */
-}
-
-.prev-button:hover, .next-button:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-}

@@ -1,0 +1,46 @@
+/* Style the entire navbar */
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Style the navigation links inside the navbar */
+.navbar a {
+    float: left; /* Float the links to the left to create a horizontal layout */
+    display: block; /* Make the links block-level elements for spacing and alignment */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 14px 18px; /* Padding for each link (top and bottom, left and right) */
+    text-decoration: none; /* Remove underlines from links */
+    border-right: 1px solid transparent; /* Add a border on the right side */
+}
+
+/* Style the navigation links when hovered */
+.navbar a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-out;
+    background-color: #ddd; /* Background color on hover */
+    color: #333; /* Text color on hover */
+    border-radius: 5px;
+}
+
+/* Style the active link (current page) */
+.navbar .active {
+    background-color: #007bff; /* Background color for the active link */
+    color: #fff; /* Text color for the active link */
+}
+
+/* Add spacing between the navbar links */
+.navbar a:not(:first-child) {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+
+.next-prev-buttons {
+    float: right; /* Float the "Next" button to the right */
+    font-size: 18px;
+}
+
+.next-prev-buttons:hover {
+    color: #ffffff;
+}
