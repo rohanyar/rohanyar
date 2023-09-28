@@ -97,16 +97,6 @@ ul.myUL {
     text-align: left;
 }
 
-/* Style the buttons in the nav bar */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between; /* This will place items at each end */
-}
-
 /* Style the "Previous" and "Next" buttons */
 .prev-button, .next-button {
     display: inline-block;
@@ -117,6 +107,14 @@ nav {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.prev-button {
+    float: left; /* Float the "Previous" button to the left */
+}
+
+.next-button {
+    float: right; /* Float the "Next" button to the right */
 }
 
 .prev-button:hover, .next-button:hover {
