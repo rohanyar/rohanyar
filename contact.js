@@ -36,10 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function() {
-                console.log('SUCCESS!');
+                alert('SUCCESS!');
             }, function(error) {
-                console.log('FAILED...', error);
+                alert('FAILED...', error);
             });
+
+            document.getElementById("contact-form").reset();
         }
     });
 });
