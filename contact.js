@@ -17,25 +17,30 @@ document.addEventListener("DOMContentLoaded", function () {
         const validationErrors = [];
 
         if (!emailRegex.test(email)) {
-            validationErrors.push("You have not entered a valid email address!");
+            validationErrors.push("Please enter a valid email address.");
         }
         if (!document.getElementById('user_lname').value.trim()) {
-            validationErrors.push("You have not entered a last name!");
+            validationErrors.push("Please enter a last name.");
         }
         if (!document.getElementById('user_fname').value.trim()) {
-            validationErrors.push("You have not entered a first name!");
+            validationErrors.push("Please enter a first name.");
         }
         if (!phoneRegex.test(phone)) {
-            validationErrors.push("You have not entered a valid phone number! Please enter it in the 123-456-7890 format.");
+            validationErrors.push("Please enter a valid phone number.");
         }
         if (!document.getElementById('user_message').value.trim()) {
-            validationErrors.push("You have not entered a message!");
+            validationErrors.push("Please enter a message.");
         }
 
         if (validationErrors.length > 0) {
             errorElement.innerHTML = validationErrors.join("<br>");
         } else {
-            emailjs.sendForm('contact_service', 'contact_form', this);
+            emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(function() {
+                console.log('SUCCESS!');
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
         }
     });
 });
