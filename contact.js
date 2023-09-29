@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init('PjbqcBiztWP62X0yo');
 
     const form = document.getElementById('contact-form');
     const errorElement = document.getElementById('error');
