@@ -2,6 +2,7 @@
 .navbar {
     background-color: #333; /* Background color for the navbar */
     overflow: hidden; /* Ensure content doesn't overflow */
+    font-family: Arial, sans-serif; /* Specify a font family */
 }
 
 /* Style the navigation links inside the navbar */
@@ -16,7 +17,7 @@
 }
 
 /* Style the navigation links when hovered */
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover, .dropdown-button {
     text-decoration: underline;
     transition: all 0.5s ease-out;
     background-color: #ddd; /* Background color on hover */
@@ -31,16 +32,64 @@
 }
 
 /* Add spacing between the navbar links */
-.navbar a:not(:first-child) {
-    margin-left: 10px; /* Adjust the margin as needed */
+.navbar a:not(:first-child), .dropdown-button, .dropdown {
+    margin-left: 20px; /* Adjust the margin as needed for spacing */
 }
 
-
+/* Style the "Next" and "Previous" buttons */
 .next-prev-buttons {
-    float: right; /* Float the "Next" button to the right */
+    float: right; /* Float the buttons to the right */
     font-size: 18px;
+    color: #007bff; /* Text color for the buttons */
 }
 
 .next-prev-buttons:hover {
-    color: #ffffff;
+    color: #0056b3; /* Change text color on hover */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropdown-button {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: inherit;
+    padding: 14px 18px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #3199ee;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }

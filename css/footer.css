@@ -1,0 +1,30 @@
+footer {
+    background-color: var(--bg-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info a{
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding-right: 1%;
+}
+.contact-info p{
+    padding-right: 1%;
+    font-size: large;
+    color: var(--text-color)
+}
+.contact-info i{
+    font-size: 40px;
+}
