@@ -100,3 +100,11 @@ ul.myUL {
 }
 
 
+/* Style for the section description */
+.section-description-index {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: #666; /* Text color */
+    text-align: center; /* Left-align the text within the description */
+    width: 900px;
+    padding-top: 30px;
+}
